@@ -1,5 +1,6 @@
 import { IconGlobeFilled } from '@tabler/icons-react';
 import React from 'react';
+import GuliLogo from '@/components/icons/GuliLogo';
 import {
   SidebarMenu,
   SidebarMenuButton,
@@ -12,10 +13,13 @@ function AppSidebarHeader() {
       <SidebarMenuItem>
         <SidebarMenuButton
           asChild
-          className="data-[slot=sidebar-menu-button]:!p-1.5"
+          className="data-[slot=sidebar-menu-button]:!p-0 gap-3"
+          size="lg"
         >
           <a href="/">
-            <IconGlobeFilled className="!size-5 text-secondary-foreground" />
+            <div className="flex aspect-square size-8 items-center justify-center gap-2 rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
+              <GuliLogo className="!h-10 !w-10 text-secondary" />
+            </div>
             <span className="font-black text-base text-primary">
               Bull
               <span className="font-light text-secondary-foreground italic">

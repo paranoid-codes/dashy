@@ -1,3 +1,6 @@
+/** biome-ignore-all lint/suspicious/noDocumentCookie: <explanation> */
+/** biome-ignore-all lint/correctness/useExhaustiveDependencies: <explanation> */
+/** biome-ignore-all lint/nursery/noShadow: <explanation> */
 'use client';
 
 import { Slot } from '@radix-ui/react-slot';
@@ -28,7 +31,7 @@ const SIDEBAR_COOKIE_NAME = 'sidebar_state';
 const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7;
 const SIDEBAR_WIDTH = '11rem';
 const SIDEBAR_WIDTH_MOBILE = '18rem';
-const SIDEBAR_WIDTH_ICON = '2.4rem';
+const SIDEBAR_WIDTH_ICON = '2.5rem';
 const SIDEBAR_KEYBOARD_SHORTCUT = 'b';
 
 type SidebarContextProps = {
