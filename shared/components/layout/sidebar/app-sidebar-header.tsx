@@ -1,11 +1,11 @@
-import { IconGlobeFilled } from '@tabler/icons-react';
-import React from 'react';
-import GuliLogo from '@/components/icons/GuliLogo';
+// import { IconGlobeFilled } from '@tabler/icons-react';
+
+import GuliLogo from '@/shared/components/icons/GuliLogo';
 import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-} from '@/components/ui/sidebar';
+} from '@/shared/components/ui/sidebar';
 
 function AppSidebarHeader() {
   return (

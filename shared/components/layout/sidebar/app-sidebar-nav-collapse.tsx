@@ -6,7 +6,7 @@ import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from '@/components/ui/collapsible';
+} from '@/shared/components/ui/collapsible';
 import {
   SidebarGroup,
   SidebarGroupLabel,
@@ -16,25 +16,30 @@ import {
   SidebarMenuSub,
   SidebarMenuSubButton,
   SidebarMenuSubItem,
-} from '@/components/ui/sidebar';
+} from '@/shared/components/ui/sidebar';
 
-export default function AppSidebarNavCollapse({
-  items,
-}: {
-  items: {
+type Item = {
+  title: string;
+  url: string;
+  icon?: LucideIcon;
+  isActive?: boolean;
+  items?: {
     title: string;
     url: string;
     icon?: LucideIcon;
-    isActive?: boolean;
-    items?: {
-      title: string;
-      url: string;
-    }[];
   }[];
+};
+
+export default function AppSidebarNavCollapse({
+  groupLabel,
+  items,
+}: {
+  groupLabel: string;
+  items: Item[];
 }) {
   return (
     <SidebarGroup>
-      <SidebarGroupLabel>Utilities</SidebarGroupLabel>
+      <SidebarGroupLabel>{groupLabel}</SidebarGroupLabel>
       <SidebarMenu>
         {items.map((item) => (
           <Collapsible

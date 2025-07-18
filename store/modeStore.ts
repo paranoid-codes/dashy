@@ -2,28 +2,28 @@
 import { create } from 'zustand';
 
 // Define the possible modes
-type Mode = 'active' | 'passive';
+type Mode = 'on' | 'off';
 
 // Define the shape of your store
 interface ModeStore {
   mode: Mode;
-  setActive: () => void;
-  setPassive: () => void;
+  setOn: () => void;
+  setOff: () => void;
 }
 
 // Create the Zustand store
 export const useModeStore = create<ModeStore>((set, get) => ({
-  mode: 'passive', // Default state is passive
+  mode: 'off', // Default state is off
 
-  setActive: () => {
-    // console.log("🟢 Setting mode to ACTIVE");
-    set({ mode: 'active' });
+  setOn: () => {
+    // console.log("🟢 Setting mode to ON");
+    set({ mode: 'on' });
     console.log('🟢 Mode after set:', get().mode);
   },
 
-  setPassive: () => {
-    // console.log("🔴 Setting mode to PASSIVE");
-    set({ mode: 'passive' });
+  setOff: () => {
+    // console.log("🔴 Setting mode to OFF");
+    set({ mode: 'off' });
     console.log('🔴 Mode after set:', get().mode);
   },
 }));

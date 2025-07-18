@@ -66,6 +66,7 @@
   --shadow-opacity: var(--shadow-opacity);
   --color-shadow-color: var(--shadow-color);
   --color-destructive-foreground: var(--destructive-foreground);
+  --elegant-font: var(----elegant-font);
 }
 
 :root {
@@ -132,6 +133,7 @@
     hsl(240 30% 25% / 0.12);
   --shadow-2xl: 0px 4px 10px 0px hsl(240 30% 25% / 0.3);
   --tracking-normal: 0em;
+  --elegant-font: 'Great Vibes';
 }
 
 .dark {

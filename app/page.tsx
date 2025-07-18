@@ -1,6 +1,6 @@
 // app/page.tsx (or wherever your homepage is)
 import Link from 'next/link';
-import { Button } from '@/components/ui/button'; // Adjust path if needed
+import { Button } from '@/shared/components/ui/button'; // Adjust path if needed
 
 export default function HomePage() {
   return (
